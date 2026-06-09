@@ -1,0 +1,9 @@
+{
+  "name": "ai-proxy",
+  "version": "1.0.0",
+  "description": "AI API Proxy - CloudRun Function",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

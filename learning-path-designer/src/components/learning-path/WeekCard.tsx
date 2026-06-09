@@ -51,7 +51,7 @@ function generateResources(task: WeekTask) {
 
 export default function WeekCard({ task, index, isCurrentWeek, onToggle }: WeekCardProps) {
   const [expanded, setExpanded] = useState(false);
-  const badge = typeBadge[task.type];
+  const badge = typeBadge[task.type] || { color: 'cyan' as const, label: '学习' };
   const isCompleted = task.status === 'completed';
   const isInProgress = task.status === 'in_progress';
 

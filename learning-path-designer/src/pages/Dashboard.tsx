@@ -19,10 +19,10 @@ export default function Dashboard() {
   const achievementCount = Math.max(1, Math.floor(completed * 0.8)); // 简单模拟：每完成一周约0.8个成就
   const totalAchievements = 24;
   const comprehensiveScore = Math.round(
-    (skills.promptEngineering + skills.workflowDesign + skills.dataAnalysis +
-     skills.toolUsage + skills.aiEthics + skills.businessUnderstanding) / 6
+    (skills.aiToolSkill + skills.promptSkill + skills.workflowSkill +
+     skills.riskAwareness + skills.collaboration + skills.deliveryQuality) / 6
   );
-  const scoreImprovement = Math.max(0, Math.round(comprehensiveScore * 0.08)); // 模拟：较上周提升约8%
+  const scoreImprovement = Math.max(0, Math.round(comprehensiveScore * 0.08));
 
   return (
     <motion.div

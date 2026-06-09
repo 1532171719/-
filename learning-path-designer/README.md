@@ -4,7 +4,7 @@
 
 ## 🚀 公网访问
 
-> **🔗 在线地址**: [https://study-v1-d1gyvvebx98b3bd65-1325664181.tcloudbaseapp.com/](https://study-v1-d1gyvvebx98b3bd65-1325664181.tcloudbaseapp.com/?v=20260607)
+> **🔗 在线地址**: [https://personal-d9gneosnn8b41f1a5-1325664181.tcloudbaseapp.com/](https://personal-d9gneosnn8b41f1a5-1325664181.tcloudbaseapp.com/)
 
 ## 📦 技术栈
 
@@ -17,7 +17,7 @@
 | 动画 | Framer Motion 11 |
 | 图标 | Lucide React |
 | 图表 | Recharts |
-| 部署 | 腾讯云 CloudBase 静态托管 |
+| 部署 | 腾讯云 CloudBase 静态托管 |\n| CloudBase SDK | @cloudbase/js-sdk (已集成) |
 
 ## 🎯 Demo 页面
 
@@ -41,11 +41,12 @@ npm run build        # 构建 dist/
 
 | 项目 | 值 |
 |------|-----|
-| 环境 ID | `study-v1-d1gyvvebx98b3bd65` |
-| 环境名称 | study-v1 |
+| 环境 ID | `personal-d9gneosnn8b41f1a5` |
+| 环境名称 | personal |
+| 套餐 | 个人版 |
 | 区域 | 上海 (ap-shanghai) |
-| 静态托管域名 | `study-v1-d1gyvvebx98b3bd65-1325664181.tcloudbaseapp.com` |
-| 控制台 | [CloudBase 管理后台](https://tcb.cloud.tencent.com/dev?envId=study-v1-d1gyvvebx98b3bd65#/static-hosting) |
+| 静态托管域名 | `personal-d9gneosnn8b41f1a5-1325664181.tcloudbaseapp.com` |
+| 控制台 | [CloudBase 管理后台](https://tcb.cloud.tencent.com/dev?envId=personal-d9gneosnn8b41f1a5#/static-hosting) |
 
 ## 🔑 环境变量配置
 
@@ -56,9 +57,10 @@ npm run build        # 构建 dist/
    cp .env.example .env.local
    ```
 
-2. 编辑 `.env.local`，填入你的 OpenAI API Key：
+2. 编辑 `.env.local`，填入你的 OpenAI API Key 和 CloudBase 环境 ID：
    ```
    VITE_OPENAI_API_KEY=sk-your-actual-api-key-here
+   VITE_CLOUDBASE_ENV_ID=personal-d9gneosnn8b41f1a5
    ```
 
 3. 启动开发服务器：

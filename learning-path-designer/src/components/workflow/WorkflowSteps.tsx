@@ -2,8 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { WorkflowStep } from "../../types";
 import { Bot, User, UserCheck } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-const roleIcons: Record<string, { icon: React.FC<{ size?: number; className?: string }>; color: string; bg: string }> = {
+const roleIcons: Record<string, { icon: LucideIcon; color: string; bg: string }> = {
   ai:     { icon: Bot,       color: 'text-brand',        bg: 'bg-brand-bg' },
   human:  { icon: User,      color: 'text-accent-cyan',   bg: 'bg-accent-cyan-bg' },
   mentor: { icon: UserCheck, color: 'text-accent-amber',  bg: 'bg-accent-amber-bg' },

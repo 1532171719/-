@@ -1,0 +1,6 @@
+{
+  "name": "ai-proxy",
+  "version": "1.0.0",
+  "description": "AI API Proxy for CloudBase HTTP Function",
+  "main": "index.js"
+}
